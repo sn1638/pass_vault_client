@@ -8,6 +8,7 @@ import PasswordGenerator from './PasswordGenerator';
 export default function EditVaultEntry() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [entry,setEntry] = useState(null);
   const [title, setTitle] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
